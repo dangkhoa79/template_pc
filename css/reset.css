@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*
+※このファイルは基本的に編集しないこと。他のCSSで設定上書きでの対処を推奨。
+==================================================================================================== */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, main, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+html { font: 14px sans-serif; }
+
+body { -webkit-text-size-adjust: 100%; /* 画面回転時の自動文字サイズ調整機能OFF */ }
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section { display: block; }
+
+img { vertical-align: top; font-size: 0; -ms-interpolation-mode: bicubic; /* IE系での画像リサイズ時のリサンプリング設定 */ background: transparent; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF); /* IE6 & 7 */ zoom: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+a:link { text-decoration: underline; }
+
+a:focus { overflow: hidden; outline: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+input, select { vertical-align: middle; font-size: 100%; }
+
+textarea { font-size: 100%; }
+
+pre, code, kbd, samp, tt { font-family: monospace; }
+
+sub, sup { margin: 0; padding: 0; border: 0; outline: 0; }
+
+@media print { body { -webkit-print-color-adjust: exact; /* 印刷時の背景印刷 */ } }
+
+/* lightbox */
+#jquery-overlay { position: absolute; top: 0; left: 0; z-index: 99; width: 100%; height: 500px; }
+
+#jquery-lightbox { position: absolute; top: 0; left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0; }
+
+#jquery-lightbox a img { border: none; }
+
+#lightbox-container-image-box { position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+
+#lightbox-container-image { padding: 10px; }
+
+#lightbox-loading { position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+
+#lightbox-nav { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+
+#lightbox-nav a { outline: none; }
+
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext { width: 49%; height: 100%; zoom: 1; display: block; }
+
+#lightbox-nav-btnPrev { left: 0; float: left; }
+
+#lightbox-nav-btnNext { right: 0; float: right; }
+
+#lightbox-container-image-data-box { font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%; padding: 0 10px 0; }
+
+#lightbox-container-image-data { padding: 0 10px; color: #666; }
+
+#lightbox-container-image-data #lightbox-image-details { width: 70%; float: left; text-align: left; }
+
+#lightbox-image-details-caption { font-weight: bold; }
+
+#lightbox-image-details-currentNumber { display: block; clear: left; padding-bottom: 1.0em; }
+
+#lightbox-secNav-btnClose { width: 66px; float: right; padding-bottom: 0.7em; text-align: right; }
+
+#jquery-lightbox a { -webkit-transition: all 0s ease; -moz-transition: all 0s ease; transition: all 0s ease; }
+
+.lightbox { position: relative; display: block; }
+
+.lightbox:after { display: block; position: absolute; right: 0px; bottom: 0px; width: 33px; height: 33px; content: ""; background: url(../common_img/lightbox/ico-zoom.png) no-repeat; }

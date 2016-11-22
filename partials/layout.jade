@@ -1,0 +1,57 @@
+doctype
+html(dir="ltr",lang="ja")
+	block vars
+	head
+		meta(charset="utf-8")
+		meta(name="description",content="#{description}")
+		meta(name="keywords",content="#{keywords}")
+		meta(name="robots",content="INDEX,FOLLOW")
+		meta(name="format-detection",content="telephone=no")
+		title #{title}
+		// CSS
+		link(href="#{path}/css/reset.css",rel="stylesheet",type="text/css")
+		link(href="#{path}/css/base.css",rel="stylesheet",type="text/css")
+		if top
+			link(href="#{path}/css/top.css",rel="stylesheet",type="text/css")
+		else
+			link(href="#{path}/css/content.css",rel="stylesheet",type="text/css")
+		// JS
+		// jQueryの読み込み
+		script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+		// 上記CDNダウン時のフォールバック
+		script(type='text/javascript')
+			<!-- window.jQuery || document.write('<script src="#{path}/js/jquery.min.js"><\/script>')-->
+		script.
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-69191665-1', 'auto');
+			ga('send', 'pageview');
+	body
+		if top
+			div(id="fb-root")
+			script.
+				(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		// start wrapper
+		#wrapper
+			// start header
+			include ../partials/header.jade
+			//end header
+			//start main
+			block content
+			// end main
+			// start footer
+			include ../partials/footer.jade
+			// end footer
+		// end wrapper
+		// Include all compiled plugins (below), or include individual files as needed
+		script(type="text/javascript",src="#{path}/js/common.js")
+		if lightbox
+			script(type="text/javascript",src="#{path}/js/lightbox.js")

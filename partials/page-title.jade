@@ -1,0 +1,7 @@
+#page_title
+  .container.page_title_inner
+    h2
+      img(src="#{title_img.src}", alt="#{title_img.alt}",width="#{title_img.width}")
+      if rss_img
+        a(href="../rss.php",target="_blank",class="ml15 ov_hover")
+          img(src="./images/rss.png", alt="rss",width="23")

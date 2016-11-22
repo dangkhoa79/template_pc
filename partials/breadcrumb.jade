@@ -1,0 +1,13 @@
+#breadcrumbs
+  .container
+    ul
+      li.home
+        a(href="#{path}/", class="ov_hover") HOME
+        &nbsp;&nbsp;&gt;
+      if subon
+        li
+          a(href="#{subtxt.link}", class="ov_hover") #{title_img.alt}
+          &nbsp;&nbsp;&gt;
+        li #{subtxt.text}
+      else
+        li #{title_img.alt}

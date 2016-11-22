@@ -1,0 +1,184 @@
+//output:../../company/index.html, pretty:true
+extends ../layout.jade
+
+block vars
+  - var title='会社案内｜木造住宅のリフォームを手掛ける【東栄技建】会社情報'
+  - var description = '【有限会社東栄技建】は福岡市東区を拠点に木造住宅の修繕・リフォーム・増改築を幅広く手掛けてきた創業90年以上の老舗の建築会社です。こちらのページでは会社概要と会社までのアクセスをご覧いただけます。'
+  - var keywords = '福岡市,修繕,増改築,リフォーム,木造住宅,地域密着,有限会社東栄技建'
+  - var title_img = { src: './images/title.png', alt: '会社案内', width: '140' }
+  - var top = false
+  - var canonical = ''
+  - var path = '..'
+  - var h1 = '会社案内｜福岡市東区にある【有限会社東栄技建】の会社概要やアクセスを掲載しています。'
+
+block content
+  include ../page-title.jade
+  // end page_title
+  include ../breadcrumb.jade
+  // end breadcrumb
+  #main.clearfix
+    #com01.com_sec
+      .container
+        h3.mb30
+          img(src="./images/tit01.png", alt="こだわりの職人のご紹介")
+        ul.clearfix
+          li
+            figure
+              img(src="./images/img1.jpg", alt="松嶋職人")
+            .title
+              h4
+                img(src="./images/stit01.png", alt="松嶋職人")
+              span 職歴47年
+            .content
+              h5 仕事へのこだわり
+              p 時代の流れは日々感じていて、どんどん便利な道具、建材が出てきています。<br>その中で、新しく出てきた工法も大切にしつつ、昔からの良い技術を若い世代に技術を伝えていきたいと思います。
+          li
+            figure
+              img(src="./images/img2.jpg", alt="福﨑職人")
+            .title
+              h4
+                img(src="./images/stit02.png", alt="福﨑職人")
+              span 職歴51年
+            .content
+              h5 仕事へのこだわり
+              p 一生に何度もすることのない新築、増改築なので自分の技量をすべて出せるよう、ホームセンターから建材店を回り、利用できそうな金物関係をいつでも対応できるように日々研究しています。仕事が趣味です。
+          li
+            figure
+              img(src="./images/img3.jpg", alt="松田職人")
+            .title
+              h4
+                img(src="./images/stit03.png", alt="松田職人")
+              span 職歴47年
+            .content
+              h5 仕事へのこだわり
+              p どんなことにも妥協しない、お客様にとって最善な方法を意識しています。<br>じかにお客様とコミュニケーションも大切にすることにより、よりよいものづくりを心掛けています。
+    // end com01
+    #com02
+      .container
+        .com_title.clearfix
+          span.pull_left
+            img(src="./images/img6.jpg", alt="「木の小部屋」のご紹介")
+          h3
+            img(src="./images/tit05.jpg", alt="「木の小部屋」のご紹介")
+          span.pull_right
+            img(src="./images/img7.jpg", alt="「木の小部屋」のご紹介")
+        // end com_title
+        .com_content
+          h4 DIYや工作に使える建材の端切れを皆さまに提供しています。
+          p 別府建設では施工作業時に残った建材の端切れを、当社の倉庫前に置いています。様々なサイズのものがござ<br>いますので、ご自由にお持ち帰りいただき、お子様の工作やDIYなどにぜひご活用ください。
+        // end com_content
+    // end com02
+    #com03
+      .container
+        h3.mb35
+          img(src="./images/tit02.png", alt="会社概要・アクセスマップ")
+        .clearfix.pl20.pr20
+          .com_left
+            table
+              tbody
+                tr
+                  th 会社名
+                  td 別府建設株式会社
+                tr
+                  th 所在地
+                  td 〒813-0032 福岡県福岡市東区土井１丁目18-12
+                tr
+                  th 電話番号
+                  td 092-691-1406
+                tr
+                  th FAX番号
+                  td 092-691-1407
+                tr
+                  th 代表取締役
+                  td 別府　茂喜
+                tr
+                  th 役員
+                  td 取締役　別府保男<br>監査役　黒岩紘一
+                tr
+                  th 設立日
+                  td 昭和43年5月1日
+                tr
+                  th 資本金
+                  td 2,500万円
+                tr
+                  th 営業許可種類
+                  td
+                    ul
+                      li 建設業
+                      li 一級建築士事務所　
+                      li 一級建築士1名
+                      li 一級施工管理技士1名
+                      li ■福岡県知事許可（特-23）第29023号
+                      li ■県知事登録　第１-11637号
+                tr
+                  th 主たる営業種類
+                  td 建設工事業・屋根工事業・鋼溝造工事業・大工工<br>事業・タイル・れんが工事業・内装仕上工事業
+                tr
+                  th 主要取引金融機関名
+                  td 福岡銀行　流通センター支店<br>西日本シティ銀行　土井支店
+          // com_left
+          .com_right
+            p
+              img(src="./images/img4.jpg", alt="会社概要・アクセスマップ")
+            h5 アクセスマップ
+            .map
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.8879391257874!2d130.46507851475317!3d33.634147480721715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35418f7bad4a33eb%3A0xff316d6dc5d12020!2z5Yil5bqc5bu66Kit5qCq5byP5Lya56S-!5e0!3m2!1sja!2sjp!4v1475823102521" width="407" height="331" frameborder="0" style="border:0" allowfullscreen></iframe>
+          // end com_right
+    // end com03
+    #comp04
+      .container
+        h3.mb35
+          img(src="./images/tit03.png", alt="会社沿革")
+        .clearfix.pl20.pr20
+          .img.pull_right
+            img(src="./images/img5.jpg", alt="会社沿革")
+          .msg
+            dl
+              dt 昭和43年5月1日
+              dd 別府工務店創業
+            dl
+              dt 昭和46年9月4日
+              dd 別府建設と称号変更
+            dl
+              dt 昭和50年12月5日
+              dd 別府建設株式会社設立
+            dl
+              dt 昭和51年12月27日
+              dd 大工・屋根・鋼溝造・内装仕上工事開設
+            dl
+              dt 昭和62年4月6日
+              dd 資本金500万円を1,000万円に増資
+            dl
+              dt 平成元年10月13日
+              dd 資本金1,000万円を1,800万円に増資
+    // end comp04
+    #comp05
+      .container
+        h3.mb35
+          img(src="./images/tit04.png", alt="個人情報保護方針")
+        .pl20.pr20
+          p.mb20 当サイトの運営に際し、お客様のプライバシーを尊重し個人情報に対して十分な配慮を行うとともに、大切に保護し、 適正な管理を行うことに<br>努めております。 
+          p <strong>【個人情報の利用目的】</strong><br>
+          ul.ml20.mb05
+            li a）お客様のご要望に合わせたサービスをご提供するための各種ご連絡。
+            li b）お問い合わせいただいたご質問への回答のご連絡。
+        .txt
+          ul
+            li ・取得した個人情報は、ご本人の同意なしに目的以外では利用しません。
+            li ・情報が漏洩しないよう対策を講じ、従業員だけでなく委託業者も監督します。
+            li ・ご本人の同意を得ずに第三者に情報を提供しません。
+            li ・ご本人からの求めに応じ情報を開示します。
+            li ・公開された個人情報が事実と異なる場合、訂正や削除に応じます。
+            li ・個人情報の取り扱いに関する苦情に対し、適切・迅速に対処します。
+    
+    .bottom_link.clearfix
+      .container
+        a(href="../policy/", class="ov_hover")
+          img(src="../common_img/bot_btn1.jpg", alt="別府建設のこだわり")
+        a(href="../results/", class="ov_hover")
+          img(src="../common_img/bot_btn2.jpg", alt="施工実績")
+        a(href="../company/#com01", class="ov_hover")
+          img(src="../common_img/bot_btn3.jpg", alt="こだわりの職人")
+        a(href="../company/#com02", class="ov_hover mr00")
+          img(src="../common_img/bot_btn4.jpg", alt="木の小部屋")
+    // end bottom_link

@@ -1,0 +1,33 @@
+//output:../../contact/index.html, pretty:true
+extends ../layout.jade
+
+block vars
+  - var title='お問い合わせ｜【有限会社東栄技建】へのお問い合わせはこちら'
+  - var description = '創業90年親子３代で培ってきた豊富なノウハウがあるからこそ、解決できることがあります。家の老朽化や耐震・耐火性などにお困りの方、リフォーム・増改築をお考えの方、お気軽に【東栄技建】にご相談ください。経験豊富なスタッフが丁寧に対応します。'
+  - var keywords = '福岡市,修繕,増改築,リフォーム,木造住宅,地域密着,有限会社東栄技建'
+  - var title_img = { src: './images/title.png', alt: 'お問い合わせ', width: '215' }
+  - var top = false
+  - var canonical = ''
+  - var path = '..'
+  - var h1 = 'お問い合わせ｜木造住宅についてのお悩み、お気軽に【東栄技建】へご相談ください。'
+
+block content
+  include ../page-title.jade
+  // end page_title
+  include ../breadcrumb.jade
+  // end breadcrumb
+  #main.clearfix
+    
+    p.text_center.mt45 ただいま準備中につき、もうしばらくお待ちください。
+    
+    .bottom_link.clearfix
+      .container
+        a(href="../policy/", class="ov_hover")
+          img(src="../common_img/bot_btn1.jpg", alt="別府建設のこだわり")
+        a(href="../results/", class="ov_hover")
+          img(src="../common_img/bot_btn2.jpg", alt="施工実績")
+        a(href="../company/#com01", class="ov_hover")
+          img(src="../common_img/bot_btn3.jpg", alt="こだわりの職人")
+        a(href="../company/#com02", class="ov_hover mr00")
+          img(src="../common_img/bot_btn4.jpg", alt="木の小部屋")
+    // end bottom_link

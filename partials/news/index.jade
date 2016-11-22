@@ -1,0 +1,88 @@
+//output:../../news/index.html, pretty:true
+extends ../layout.jade
+
+block vars
+  - var title='新着情報｜創業90年信頼と実績【東栄技建】の新着情報をお届け'
+  - var description = '福岡市を中心に地域密着で木造住宅のリフォームを手掛ける【東栄技建】は、より長く快適に住めるよう、熟練の技術を駆使して修繕工事を行っております。こちらでは、修繕・改修・増改築・バリアフリー化などに関する新着情報をお届けします。'
+  - var keywords = '福岡市,修繕,増改築,リフォーム,木造住宅,バリアフリー化,地域密着,有限会社東栄技建'
+  - var title_img = { src: './images/title.png', alt: '新着情報', width: '142' }
+  - var top = false
+  - var canonical = ''
+  - var path = '..'
+  - var h1 = '新着情報｜福岡市地域密着で木造建築の修繕・増改築【有限会社東栄技建】の新着情報です。'
+  - var lightbox = true
+
+block content
+  include ../page-title.jade
+  // end page_title
+  include ../breadcrumb.jade
+  // end breadcrumb
+  #main.clearfix
+    .container
+      .new_sec
+        dl.new
+          dt.clearfix
+            span.date 2016/10/12
+            h3 別府建設のホームページをリニューアルしました。
+          dd.clearfix
+            .photo
+              a(class="ov_hover", rel="lightbox[news]", href="./images/dummy.jpg")
+                img( alt="新着情報", src="./images/img.jpg")
+                img(width="29", class="icon_zoom" alt="icon", src="images/icon_zoom.gif", height="29")
+            div(style="overflow:hidden;")
+              p.mb10
+                <span style="font-size: 10px;">極小サイズ極小サイズ極小サイズ極小サイズ極小サイズ極小サイズ</span><br>
+                <span style="font-size: 12px;">小サイズ小サイズ小サイズ小サイズ小サイズ小サイズ小サイズ小サイズ</span><br>
+                <span style="font-size: 16px;">小さめサイズ小さめサイズ小さめサイズ小さめサイズ小さめサイズ小さめサイズ</span><br>
+                <span style="font-size: 18px;">中サイズ中サイズ中サイズ中サイズ中サイズ中サイズ中サイズ中サイズ</span><br>
+                <span style="font-size: 22px;">大きめ大きめ大きめ大きめ大きめ大きめ大きめ大きめ大</span><br>
+                <span style="font-size: 28px;">大きい大きい大きい大きい大きい大きい大きい</span><br><br>
+                大きい大きい大きい
+              p(style="text-align:left;margin-top:0px;margin-bottom:0px;")左寄せ左寄せ左寄せ</p>
+              <br>
+              p(style="text-align:center;margin-top:0px;margin-bottom:0px;")中央寄せ中央寄せ中央寄せ</p>
+              <br>
+              p(style="text-align:right;margin-top:0px;margin-bottom:0px;")右寄せ右寄せ右寄せ</p>
+              <br>
+              a(href="http://www.yahoo.co.jp/",target="_blank") リンクリンクリンク<br>
+              strong 太字太字太字 <br>
+              em 斜体斜体斜体 <br>
+              u アンダーラインアンダーラインアンダーライン <br>
+              span(style="color:#FF0000")カラーカラーカラー<br>
+              span(style="color:#999999")カラーカラーカラー<br>
+              span(style="color:#FF00FF")カラーカラーカラー<br>
+              span(style="color:#00FF00")カラーカラーカラー<br>
+              span(style="color:#0000FF")カラーカラーカラー<br>
+        // end new
+        dl.new
+          dt.clearfix
+            span.date 2016/00/00
+            h3
+              タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+          dd.clearfix
+            p
+              画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。画像が無くテキストのみの場合。
+        // end new
+        dl.new
+          dt.clearfix
+            span.date 2016/00/00
+            h3
+              タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+          dd.clearfix
+        // end new
+        .new_nav.clearfix
+          a(href="#" class="pull_left ov_hover")
+            img(src="./images/prev.png", alt="前のページ", width="170")
+          a(href="#" class="pull_right ov_hover")
+            img(src="./images/next.png", alt="次のページ", width="170")
+    .bottom_link.clearfix
+      .container
+        a(href="../policy/", class="ov_hover")
+          img(src="../common_img/bot_btn1.jpg", alt="別府建設のこだわり")
+        a(href="../results/", class="ov_hover")
+          img(src="../common_img/bot_btn2.jpg", alt="施工実績")
+        a(href="../company/#com01", class="ov_hover")
+          img(src="../common_img/bot_btn3.jpg", alt="こだわりの職人")
+        a(href="../company/#com02", class="ov_hover mr00")
+          img(src="../common_img/bot_btn4.jpg", alt="木の小部屋")
+    // end bottom_link

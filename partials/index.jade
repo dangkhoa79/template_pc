@@ -1,0 +1,130 @@
+//output:index.html, pretty:true
+extends ./partials/layout.jade
+
+block vars
+  - var title='木造住宅の修繕・増改築・改修なら有限会社東栄技建にお任せ'
+  - var description = '業歴90年、親子３代に渡り長年積み重ねてきた信頼と実績で【有限会社東栄技建】はお客様にお応えします。福岡市東区を拠点に福岡市地域に密着して対応。ひとりひとりのお客様に応え、適切な修繕・改修のご提案をさせていただきます。'
+  - var keywords = '福岡市,修繕,増改築,リフォーム,木造住宅,バリアフリー化,地域密着,有限会社東栄技建'
+  - var top = true
+  - var canonical = ''
+  - var path = '.'
+  - var h1 = '有限会社東栄技建｜業歴90年信頼と実績を積み重ねてきました。'
+
+block content
+  #main
+    include ./partials/main-visual.jade
+    // end main_visual
+    .top01
+      .container
+        h3.text_center
+          img(src="./images/top01_tit.png", alt="別府建設のこだわり")
+        ul.clearfix
+          li
+            h4
+              img(src="./images/top01_stit1.png", alt="お客様の実現したい&quot;夢&quot;をカタチにします")
+            figure
+              img(src="./images/top01_img1.png", alt="お客様の実現したい&quot;夢&quot;をカタチにします")
+            p お客様のご要望・想いをしっかり聞き、<br>その上でご提案いたします。<br>”夢”をお聞かせ下さい。
+            a(href="./policy/", class="more_btn1") 詳しくはこちら
+          li
+            h4
+              img(src="./images/top01_stit2.png", alt="創業50年の歩み地域に根付いた建物づくりを")
+            figure
+              img(src="./images/top01_img2.png", alt="創業50年の歩み地域に根付いた建物づくりを")
+            p 創業50年、別府建設は地域のお客様の<br>住宅から公共の建物の施工まで、<br>ありとあらゆるものを創ってきました。
+            a(href="./policy/", class="more_btn1") 詳しくはこちら
+          li
+            h4
+              img(src="./images/top01_stit3.png", alt="こだわりの職人が在籍目に見えないところまで解決を")
+            figure
+              img(src="./images/top01_img3.png", alt="こだわりの職人が在籍目に見えないところまで解決を")
+            p 弊社には職人が在籍しており、<br>また倉庫や作業場があるので、お客様の細かいご要望をすぐに実現化可能です。
+            a(href="./policy/", class="more_btn1") 詳しくはこちら
+    // end top01
+    .top02
+      .container
+        ul.clearfix
+          li.pull_left
+            figure
+              img(src="./images/top02_img1.png", alt="リフォーム事業")
+            .info
+              p お客様のお家の悩み、「こんな部屋になったらな…」という願い、叶えてみせます！あなたの想いを聞いて、よりよい生活を創ります！
+              a(href="./policy/", class="ov_hover")
+                img(src="./images/top02_btn.png", alt="詳しくはこちら")
+          li.pull_right
+            figure
+              img(src="./images/top02_img2.png", alt="新築住宅事業")
+            .info
+              p お客様のご要望をしっかりお聞きしお客様の理想の家を<br>カタチにしてみせます！新築をお考えの方は是非お問い合わせください！
+              a(href="./policy/", class="ov_hover")
+                img(src="./images/top02_btn.png", alt="詳しくはこちら")
+    // end top02
+    .top03
+      h3.text_center
+        img(src="./images/top03_tit.png", alt="施工実績")
+      .container  
+        p.text_center
+          img(src="./images/top03_txt.png", alt="個人様の新築住宅、住宅リフォーム、公共用建物、事業用建物など様々な実績をご紹介します。")
+        ul.clearfix
+          li
+            figure
+              img(src="./images/top03_s1.png", alt="住宅リフォーム")
+            .info
+              p お母さんのための水廻りリフォーム、二世帯住宅への改修、塗装工事など小さなものから大きなものまで。
+            a(href="./results/", class="more_btn2") MORE
+          li
+            figure
+              img(src="./images/top03_s2.png", alt="新築住宅")
+            .info
+              p 個人様の新築の施工実績です。<br>こだわりのウッド調の家、和モダンの家など様々な実績紹介はこちら。
+            a(href="./results/", class="more_btn2") MORE
+          li
+            figure
+              img(src="./images/top03_s3.png", alt="公共用建物")
+            .info
+              p 地域の学校の体育館や教室、区役所などの改修など、住みやすい街づくりのお手伝い。
+            a(href="./results/", class="more_btn2") MORE
+          li
+            figure
+              img(src="./images/top03_s4.png", alt="事業用建物")
+            .info
+              p ホテルや飲食店などの改修。<br>法人様の様々な店舗の<br>リフォームの実績紹介はこちら。
+            a(href="./results/", class="more_btn2") MORE
+    // end top03`
+    .top_bottom
+      .container.clearfix
+        .top_bottom_left
+          .top_new
+            .top_new_title.clearfix.mb20
+              h3.pull_left
+                img(src="./images/top_new_title.gif", alt="新着情報 News")
+              a(href="./news/", class="pull_right ov_hover")
+                img(src="./images/new_more.gif", alt="More")
+            // end top_new_title
+            .top_new_content
+              dl.clearfix
+                dt 2016/10/12
+                dd
+                  a(href="./news/") 別府建設のホームページをリニューアルしました。
+            // end top_new_content
+          // end top_new
+          .top_facebook.mt10
+            <div class="fb-page" data-href="https://www.facebook.com/FacebookVietnam/" data-tabs="timeline" data-width="400" data-height="295" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/FacebookVietnam/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FacebookVietnam/">Facebook</a></blockquote></div>
+          // end top_facebook
+        // end top_bottom_left
+        .top_bottom_right
+          h3.mb20
+            img(src="./images/top_bottom_title.png", alt="お客様の声")
+          .clearfix.bg_line
+            a(href="#", class="ov_hover pull_left")
+              img(src="./images/top_btn1.png", alt="リフォーム Reform")
+            a(href="#", class="ov_hover pull_right")
+              img(src="./images/top_btn2.png", alt="新築住宅 Newly built house")
+          p.mb10
+            a(href="./company/#com01", class="ov_hover")
+              img(src="./images/top_btn3.jpg", alt="こだわりの 職人 Master craftsmanship")
+          p
+            a(href="./company/#com03", class="ov_hover")
+              img(src="./images/top_btn4.jpg", alt="会社案内 Company")
+        // end top_bottom_right
+    // end top_bottom
